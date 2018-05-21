@@ -20,8 +20,8 @@ export class LazyImageComponent implements OnInit {
 
   ngOnInit() {
   }
-/*
-  @HostListener("window:scroll", [event]) onWindowScroll(event) {
+
+  @HostListener("window:scroll", ['$event']) onWindowScroll(event) {
 
     // already loaded?
     if (this.loaded) {
@@ -31,9 +31,9 @@ export class LazyImageComponent implements OnInit {
     const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
     const scrollBottom = scrollTop + document.documentElement.clientHeight;
 
-    if (scrollBottom > this.spinner.nativeElement.offsetTop - 1000) {
+    if (scrollBottom > this.spinner.nativeElement.offsetTop - 50) {
         this.loaded = true;
     }
 
-  }*/
+  }
 }

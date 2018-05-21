@@ -8,13 +8,15 @@ import { MainComponent } from './main/main.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import {isPlatformBrowser} from '@angular/common';
+import { LazyImageComponent } from './lazy-image/lazy-image.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent
+    MainComponent,
+    LazyImageComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'ng-pwa' }),
